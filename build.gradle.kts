@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     kotlin("jvm") version "1.4.0"
     maven
@@ -20,17 +22,12 @@ kotlin {
     explicitApi()
 }
 
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.useIR = true
+}
+
 tasks {
-    compileKotlin {
-        kotlinOptions {
-            useIR = true
-        }
-    }
-    compileTestKotlin {
-        kotlinOptions {
-            useIR = true
-        }
-    }
     test {
         useJUnitPlatform()
     }
