@@ -21,12 +21,12 @@ kotlin {
     explicitApi()
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
-    kotlinOptions.useIR = true
-}
-
 tasks {
+    withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "11"
+        kotlinOptions.useIR = true
+        kotlinOptions.freeCompilerArgs += "-Xjvm-default=all"
+    }
     test {
         useJUnitPlatform()
     }
