@@ -23,9 +23,27 @@ public object Bootstrap : ColorPalette {
     public val gray800: String = "343a40"
     public val gray900: String = "212529"
 
-    override fun toList(): List<Pair<String, String>> {
-        TODO("Not yet implemented")
-    }
+    override fun toList(): List<Pair<String, String>> = listOf(
+        "Blue" to blue,
+        "Indigo" to indigo,
+        "Purple" to purple,
+        "Pink" to pink,
+        "Red" to red,
+        "Orange" to orange,
+        "Yellow" to yellow,
+        "Green" to green,
+        "Teal" to teal,
+        "Cyan" to cyan,
+        "Gray 100" to gray100,
+        "Gray 200" to gray200,
+        "Gray 300" to gray300,
+        "Gray 400" to gray400,
+        "Gray 500" to gray500,
+        "Gray 600" to gray600,
+        "Gray 700" to gray700,
+        "Gray 800" to gray800,
+        "Gray 900" to gray900,
+    )
 
     override fun toTree(): Tree<Pair<String, String?>> = tree("Bootstrap" to null as String?) {
         branch("Blue" to blue)
