@@ -98,7 +98,6 @@ public object ElementaryOS : ColorPalette {
     public val black900: String = "000000"
     public val black: String get() = black500
 
-    // TODO: Fix names
     override fun toList(): List<Pair<String, String>> = listOf(
         "Strawberry" to strawberry,
         "Strawberry 100" to strawberry100,
@@ -171,7 +170,7 @@ public object ElementaryOS : ColorPalette {
         "Black 300" to black300,
         "Black 500" to black500,
         "Black 700" to black700,
-        "Black 900" to black900
+        "Black 900" to black900,
     )
 
     override fun toTree(): Tree<Pair<String, String?>> = tree("Elementary OS" to null as String?) {

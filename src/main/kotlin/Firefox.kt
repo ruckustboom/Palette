@@ -80,7 +80,6 @@ public object Firefox : ColorPalette {
     // White
     public val white100: String = "FFFFFF"
 
-    // TODO: Fix names
     override fun toList(): List<Pair<String, String>> = listOf(
         "Blue 40" to blue40,
         "Blue 50" to blue50,
@@ -137,7 +136,7 @@ public object Firefox : ColorPalette {
         "Gray 70" to grey70,
         "Gray 80" to grey80,
         "Gray 90" to grey90,
-        "White 100" to white100
+        "White 100" to white100,
     )
 
     override fun toTree(): Tree<Pair<String, String?>> = tree("Firefox" to null as String?) {
