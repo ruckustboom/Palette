@@ -93,7 +93,6 @@ public object iOS : ColorPalette {
     public val gray6Dark: String = "1C1C1E"
     public val gray6DarkAccessible: String = "242426"
 
-    // TODO: Fix names
     override fun toList(): List<Pair<String, String>> = listOf(
         "Blue Light" to blueLight,
         "Blue Light Accessible" to blueLightAccessible,
