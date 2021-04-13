@@ -27,22 +27,22 @@ public object Nord : ColorPalette {
     public val nord15: String = "B48EAD"
 
     override fun toList(): List<Pair<String, String>> = listOf(
-            "nord0" to nord0,
-            "nord1" to nord1,
-            "nord2" to nord2,
-            "nord3" to nord3,
-            "nord4" to nord4,
-            "nord5" to nord5,
-            "nord6" to nord6,
-            "nord7" to nord7,
-            "nord8" to nord8,
-            "nord9" to nord9,
-            "nord10" to nord10,
-            "nord11" to nord11,
-            "nord12" to nord12,
-            "nord13" to nord13,
-            "nord14" to nord14,
-            "nord15" to nord15,
+        "nord0" to nord0,
+        "nord1" to nord1,
+        "nord2" to nord2,
+        "nord3" to nord3,
+        "nord4" to nord4,
+        "nord5" to nord5,
+        "nord6" to nord6,
+        "nord7" to nord7,
+        "nord8" to nord8,
+        "nord9" to nord9,
+        "nord10" to nord10,
+        "nord11" to nord11,
+        "nord12" to nord12,
+        "nord13" to nord13,
+        "nord14" to nord14,
+        "nord15" to nord15,
     )
 
     override fun toTree(): Tree<Pair<String, String?>> = tree("Nord" to null as String?) {

@@ -7,14 +7,6 @@ public interface ColorPalette {
     public fun toTree(): Tree<Pair<String, String?>>
 }
 
-public fun main() {
-    Material.toTree().forEach { (name, color) ->
-        if (color != null) {
-            println("$name: #$color")
-        }
-    }
-}
-
 // Helpers
 
 public fun <T> Tree<T>.forEach(isPostFix: Boolean = false, action: (T) -> Unit) {

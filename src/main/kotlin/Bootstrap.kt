@@ -13,6 +13,7 @@ public object Bootstrap : ColorPalette {
     public val teal: String = "20C997"
     public val cyan: String = "17A2B8"
 
+    public val white: String = "FFFFFF"
     public val gray100: String = "f8f9fa"
     public val gray200: String = "e9ecef"
     public val gray300: String = "dee2e6"
@@ -22,6 +23,7 @@ public object Bootstrap : ColorPalette {
     public val gray700: String = "495057"
     public val gray800: String = "343a40"
     public val gray900: String = "212529"
+    public val black: String = "000000"
 
     override fun toList(): List<Pair<String, String>> = listOf(
         "Blue" to blue,
@@ -34,6 +36,7 @@ public object Bootstrap : ColorPalette {
         "Green" to green,
         "Teal" to teal,
         "Cyan" to cyan,
+        "White" to white,
         "Gray 100" to gray100,
         "Gray 200" to gray200,
         "Gray 300" to gray300,
@@ -43,6 +46,7 @@ public object Bootstrap : ColorPalette {
         "Gray 700" to gray700,
         "Gray 800" to gray800,
         "Gray 900" to gray900,
+        "Black" to black,
     )
 
     override fun toTree(): Tree<Pair<String, String?>> = tree("Bootstrap" to null as String?) {
@@ -56,6 +60,8 @@ public object Bootstrap : ColorPalette {
         branch("Green" to green)
         branch("Teal" to teal)
         branch("Cyan" to cyan)
+        branch("White" to white)
+        branch("Black" to black)
         branch("Gray" to gray500) {
             branch("100" to gray100)
             branch("200" to gray200)
