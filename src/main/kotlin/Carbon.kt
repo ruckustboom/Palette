@@ -2,10 +2,6 @@ package ruckustboom.palette
 
 // https://www.carbondesignsystem.com/guidelines/color/overview/
 public object Carbon : ColorPalette {
-    // Neutral
-    public val black: String = "000000"
-    public val white: String = "FFFFFF"
-
     // Red
     public val red100: String = "2D0709"
     public val red90: String = "520408"
@@ -90,6 +86,30 @@ public object Carbon : ColorPalette {
     public val green20: String = "A7F0BA"
     public val green10: String = "DEFBE6"
 
+    // Yellow
+    public val yellow100: String = "1C1500"
+    public val yellow90: String = "302400"
+    public val yellow80: String = "483700"
+    public val yellow70: String = "684E00"
+    public val yellow60: String = "8E6A00"
+    public val yellow50: String = "B28600"
+    public val yellow40: String = "D2A106"
+    public val yellow30: String = "F1C21B"
+    public val yellow20: String = "FDDC69"
+    public val yellow10: String = "FCF4D6"
+
+    // Orange
+    public val orange100: String = "231000"
+    public val orange90: String = "3E1A00"
+    public val orange80: String = "5E2900"
+    public val orange70: String = "8A3800"
+    public val orange60: String = "BA4E00"
+    public val orange50: String = "EB6200"
+    public val orange40: String = "FF832B"
+    public val orange30: String = "FFB784"
+    public val orange20: String = "FFD9BE"
+    public val orange10: String = "FFF2E8"
+
     // Cool Gray
     public val coolGray100: String = "121619"
     public val coolGray90: String = "21272A"
@@ -126,33 +146,11 @@ public object Carbon : ColorPalette {
     public val warmGray20: String = "E5E0DF"
     public val warmGray10: String = "F7F3F2"
 
-    // Yellow
-    public val yellow100: String = "1C1500"
-    public val yellow90: String = "302400"
-    public val yellow80: String = "483700"
-    public val yellow70: String = "684E00"
-    public val yellow60: String = "8E6A00"
-    public val yellow50: String = "B28600"
-    public val yellow40: String = "D2A106"
-    public val yellow30: String = "F1C21B"
-    public val yellow20: String = "FDDC69"
-    public val yellow10: String = "FCF4D6"
-
-    // Orange
-    public val orange100: String = "231000"
-    public val orange90: String = "3E1A00"
-    public val orange80: String = "5E2900"
-    public val orange70: String = "8A3800"
-    public val orange60: String = "BA4E00"
-    public val orange50: String = "EB6200"
-    public val orange40: String = "FF832B"
-    public val orange30: String = "FFB784"
-    public val orange20: String = "FFD9BE"
-    public val orange10: String = "FFF2E8"
+    // Neutral
+    public val black: String = "000000"
+    public val white: String = "FFFFFF"
 
     override fun toList(): List<Pair<String, String>> = listOf(
-        "Black" to black,
-        "White" to white,
         "Red 100" to red100,
         "Red 90" to red90,
         "Red 80" to red80,
@@ -223,6 +221,26 @@ public object Carbon : ColorPalette {
         "Green 30" to green30,
         "Green 20" to green20,
         "Green 10" to green10,
+        "Yellow 100" to yellow100,
+        "Yellow 90" to yellow90,
+        "Yellow 80" to yellow80,
+        "Yellow 70" to yellow70,
+        "Yellow 60" to yellow60,
+        "Yellow 50" to yellow50,
+        "Yellow 40" to yellow40,
+        "Yellow 30" to yellow30,
+        "Yellow 20" to yellow20,
+        "Yellow 10" to yellow10,
+        "Orange 100" to orange100,
+        "Orange 90" to orange90,
+        "Orange 80" to orange80,
+        "Orange 70" to orange70,
+        "Orange 60" to orange60,
+        "Orange 50" to orange50,
+        "Orange 40" to orange40,
+        "Orange 30" to orange30,
+        "Orange 20" to orange20,
+        "Orange 10" to orange10,
         "Cool Gray 100" to coolGray100,
         "Cool Gray 90" to coolGray90,
         "Cool Gray 80" to coolGray80,
@@ -253,31 +271,11 @@ public object Carbon : ColorPalette {
         "Warm Gray 30" to warmGray30,
         "Warm Gray 20" to warmGray20,
         "Warm Gray 10" to warmGray10,
-        "Yellow 100" to yellow100,
-        "Yellow 90" to yellow90,
-        "Yellow 80" to yellow80,
-        "Yellow 70" to yellow70,
-        "Yellow 60" to yellow60,
-        "Yellow 50" to yellow50,
-        "Yellow 40" to yellow40,
-        "Yellow 30" to yellow30,
-        "Yellow 20" to yellow20,
-        "Yellow 10" to yellow10,
-        "Orange 100" to orange100,
-        "Orange 90" to orange90,
-        "Orange 80" to orange80,
-        "Orange 70" to orange70,
-        "Orange 60" to orange60,
-        "Orange 50" to orange50,
-        "Orange 40" to orange40,
-        "Orange 30" to orange30,
-        "Orange 20" to orange20,
-        "Orange 10" to orange10,
+        "Black" to black,
+        "White" to white,
     )
 
     override fun toTree(): Tree<Pair<String, String?>> = tree("Firefox" to null as String?) {
-        branch("Black" to black)
-        branch("White" to white)
         branch("Red" to null) {
             branch("Red 100" to red100)
             branch("Red 90" to red90)
@@ -362,6 +360,30 @@ public object Carbon : ColorPalette {
             branch("Green 20" to green20)
             branch("Green 10" to green10)
         }
+        branch("Yellow" to null) {
+            branch("Yellow 100" to yellow100)
+            branch("Yellow 90" to yellow90)
+            branch("Yellow 80" to yellow80)
+            branch("Yellow 70" to yellow70)
+            branch("Yellow 60" to yellow60)
+            branch("Yellow 50" to yellow50)
+            branch("Yellow 40" to yellow40)
+            branch("Yellow 30" to yellow30)
+            branch("Yellow 20" to yellow20)
+            branch("Yellow 10" to yellow10)
+        }
+        branch("Orange" to null) {
+            branch("Orange 100" to orange100)
+            branch("Orange 90" to orange90)
+            branch("Orange 80" to orange80)
+            branch("Orange 70" to orange70)
+            branch("Orange 60" to orange60)
+            branch("Orange 50" to orange50)
+            branch("Orange 40" to orange40)
+            branch("Orange 30" to orange30)
+            branch("Orange 20" to orange20)
+            branch("Orange 10" to orange10)
+        }
         branch("Cool Gray" to null) {
             branch("Cool Gray 100" to coolGray100)
             branch("Cool Gray 90" to coolGray90)
@@ -398,29 +420,7 @@ public object Carbon : ColorPalette {
             branch("Warm Gray 20" to warmGray20)
             branch("Warm Gray 10" to warmGray10)
         }
-        branch("Yellow" to null) {
-            branch("Yellow 100" to yellow100)
-            branch("Yellow 90" to yellow90)
-            branch("Yellow 80" to yellow80)
-            branch("Yellow 70" to yellow70)
-            branch("Yellow 60" to yellow60)
-            branch("Yellow 50" to yellow50)
-            branch("Yellow 40" to yellow40)
-            branch("Yellow 30" to yellow30)
-            branch("Yellow 20" to yellow20)
-            branch("Yellow 10" to yellow10)
-        }
-        branch("Orange" to null) {
-            branch("Orange 100" to orange100)
-            branch("Orange 90" to orange90)
-            branch("Orange 80" to orange80)
-            branch("Orange 70" to orange70)
-            branch("Orange 60" to orange60)
-            branch("Orange 50" to orange50)
-            branch("Orange 40" to orange40)
-            branch("Orange 30" to orange30)
-            branch("Orange 20" to orange20)
-            branch("Orange 10" to orange10)
-        }
+        branch("Black" to black)
+        branch("White" to white)
     }
 }
